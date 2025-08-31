@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Journey Kids - Preschool</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-blue-600 text-white shadow-lg py-4 fixed top-0 w-full z-10">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold">The Journey Kids</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-blue-200 transition-colors">About Us</a>
+                <a href="#facilities" class="hover:text-blue-200 transition-colors">Facilities</a>
+                <a href="#events" class="hover:text-blue-200 transition-colors">Community</a>
+                <a href="#contact" class="hover:text-blue-200 transition-colors">Contact</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="fixed top-16 w-full bg-blue-600 text-white py-4 px-4 hidden transition-all duration-300 ease-in-out z-10">
+        <a href="#about" class="block py-2 hover:bg-blue-500 rounded-md text-center">About Us</a>
+        <a href="#facilities" class="block py-2 hover:bg-blue-500 rounded-md text-center">Facilities</a>
+        <a href="#events" class="block py-2 hover:bg-blue-500 rounded-md text-center">Community</a>
+        <a href="#contact" class="block py-2 hover:bg-blue-500 rounded-md text-center">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-gradient-to-r from-blue-500 to-purple-500 text-white pt-24 pb-16 flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12 px-4">
+        <div class="text-center md:text-left">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">Embark on a joyful learning journey!</h1>
+            <p class="text-lg sm:text-xl max-w-xl mx-auto md:mx-0 opacity-90 mb-8">
+                The Journey Kids is a place where young minds blossom through discovery, creativity, and care.
+            </p>
+            <a href="#about" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition-transform transform hover:scale-105">
+                Learn More
+            </a>
+        </div>
+        <div class="w-64 h-64 sm:w-80 sm:h-80 bg-gray-200 rounded-3xl overflow-hidden shadow-2xl">
+            <img src="https://placehold.co/800x800/e0f2fe/1e40af?text=Happy+Kids" alt="Happy children playing" class="w-full h-full object-cover rounded-3xl">
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-700 mb-12">About Our Preschool</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <p class="text-lg mb-4 leading-relaxed">
+                        At The Journey Kids, we believe in providing a holistic and nurturing environment for your child's first steps in education. We proudly follow the highly-regarded <strong class="text-blue-600">XSEED curriculum</strong>, which focuses on interactive, hands-on learning and critical thinking.
+                    </p>
+                    <p class="text-lg mb-4 leading-relaxed">
+                        Our dedicated team of <strong class="text-blue-600">trained teachers and kind caretakers</strong> ensures every child receives personalized attention. With an excellent <strong class="text-blue-600">adult-to-child ratio of 1:7</strong>, we guarantee a safe and supportive space for every little learner.
+                    </p>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="https://placehold.co/600x400/fff3e0/ff9900?text=XSEED+Curriculum" alt="Children learning in a classroom" class="rounded-2xl shadow-xl transform transition-transform hover:scale-105">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-700 mb-12">Our State-of-the-Art Facilities</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative group">
+                    <img src="https://placehold.co/600x400/e6f3ff/007bff?text=Classroom" alt="Air-conditioned classroom" class="rounded-2xl shadow-xl transition-transform transform group-hover:scale-105">
+                    <div class="absolute inset-0 bg-blue-800 bg-opacity-70 rounded-2xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="text-white text-xl font-semibold text-center px-4">Fully air-conditioned classrooms and halls for a comfortable learning experience.</p>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="https://placehold.co/600x400/e6f3ff/007bff?text=Play+Area" alt="Dedicated play area" class="rounded-2xl shadow-xl transition-transform transform group-hover:scale-105">
+                    <div class="absolute inset-0 bg-blue-800 bg-opacity-70 rounded-2xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="text-white text-xl font-semibold text-center px-4">A dedicated, safe play area where children can explore and have fun.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-700 mb-12">Our Vibrant Community</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Festival Celebrations Card -->
+                <div class="bg-red-50 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow transform hover:-translate-y-2">
+                    <h3 class="text-2xl font-semibold text-red-600 mb-4">Festival Celebrations</h3>
+                    <p class="text-lg">We celebrate all festivals with great enthusiasm, teaching children about diverse cultures and traditions in a fun and interactive way.</p>
+                </div>
+                <!-- Sports and Cultural Meets Card -->
+                <div class="bg-green-50 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow transform hover:-translate-y-2">
+                    <h3 class="text-2xl font-semibold text-green-600 mb-4">Grand Meets</h3>
+                    <p class="text-lg">Our annual Sports Meet and Cultural Meet are grand events where children showcase their talents and build confidence.</p>
+                </div>
+                <!-- Parent Teacher Meetings Card -->
+                <div class="bg-yellow-50 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow transform hover:-translate-y-2">
+                    <h3 class="text-2xl font-semibold text-yellow-600 mb-4">Parent Teacher Meetings</h3>
+                    <p class="text-lg">We believe in strong partnerships with parents. Regular Parent-Teacher Meetings ensure open communication about your child's progress.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Ready to Begin The Journey?</h2>
+            <p class="text-lg mb-8 opacity-90">
+                For admissions inquiries or to schedule a visit, please contact us.
+            </p>
+            <div class="max-w-md mx-auto">
+                <a href="mailto:info@thejourneykids.com" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition-transform transform hover:scale-105">
+                    Get in Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; 2024 The Journey Kids. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
